@@ -75,7 +75,11 @@ class App extends React.Component {
   }
 
   addToOrder(item) {
-    this.setState({orders: [...this.state.orders, item]})
+    const isInArray = this.state.orders.some(el => el.id === item.id);
+  
+    if (!isInArray) {
+      this.setState({ orders: [...this.state.orders, item] });
+    }
   }
 }
 

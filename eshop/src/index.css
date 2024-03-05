@@ -78,6 +78,37 @@ header .shop-cart {
   -moz-box-shadow: 10px 20px 46px 0px rgba(0,0,0,0.75);
   box-shadow: 10px 20px 46px 0px rgba(0,0,0,0.75);
   z-index: 5;
+  padding: 20px;
+  padding-bottom: 0;
+  border-radius: 15px;
+}
+
+header .shop-cart .empty h2{
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+header .shop-cart .item {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+header .shop-cart .item img {
+  width: 70px;
+  float: left;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+header .shop-cart .item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+header .shop-cart .item p {
+  color: burlywood;
 }
 
 header .presentation::before {
